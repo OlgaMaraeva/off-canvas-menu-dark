@@ -79,7 +79,7 @@ $(".js-vertical-tab-accordion-heading").click(function(event) {
   $(".js-vertical-tab[rel^='"+accordion_activeTab+"']").addClass("is-active");
 });
 
-
+/*
 $(".vertical-tabs-container").mouseleave(function() {
 
 $('.js-vertical-tab-content').stop(true);
@@ -105,6 +105,7 @@ time=setInterval(function(){
 
 	  
 });
+*/
 
 /*----left-floating-menu with width changing
 var $mobileMenu = $('.mobile-menu'),
