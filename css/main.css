@@ -386,52 +386,7 @@ display:block;
 margin:0 auto;
   overflow: hidden; }
 
- /* -----start floating-menu with width changing
- .floating-menu {
-    bottom: 0px;
-    background: none repeat scroll 0% 0% #000;
-    color: rgba(255, 255, 255, 0.54);
-	font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    display: block;
-	text-align:center;
-    left: 0px;
-    position: fixed;
-    top: 0;
-    width: 0px;
-	padding-top:5px;
-    z-index: 4;
-	overflow:hidden;
-	
-	> ul {
-	display: block; 
-    position: relative;
-	@include size(240px auto);
-	
-	> li {
-	padding: 2em 0.5em;
-    line-height: 1em;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-	background: rgba(32, 31, 31, 1);
-}
-	
-    ul {
-	position: relative;
-	display: none;
-    @include size(240px auto);	
-	text-align:left;
-    padding: 2em;
-    padding-left: 3em;
-
-   li {
-   padding-bottom: 1em;
-}
-}   
-   }
-   }
-
-end floating-menu with width changing ------*/
+ 
 .floating-menu {
   bottom: 0px;
   background: none repeat scroll 0% 0% #000;
