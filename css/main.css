@@ -356,14 +356,35 @@ body {
   width: 100%;
   text-align: justify; }
 
-.wrapper-for-content-outside-of-footer {
+.content-wrapper {
   max-width: 64em;
   margin-left: auto;
-  margin-right: auto; }
-  .wrapper-for-content-outside-of-footer:after {
+  margin-right: auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em; }
+  .content-wrapper:after {
     content: "";
     display: table;
     clear: both; }
+
+.hide-scroll {
+ max-width: 64em;
+position:relative;
+display:block;
+margin:0 auto;
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 1s ease-in 0s;
+  -moz-transition: -moz-transform 1s ease-in 0s;
+  transition: transform 1s ease-in 0s; }
+
+.wrapper-hide-scroll {
+ max-width: 64em;
+position:relative;
+display:block;
+margin:0 auto;
+  overflow: hidden; }
 
  /* -----start floating-menu with width changing
  .floating-menu {
@@ -426,8 +447,7 @@ end floating-menu with width changing ------*/
   width: 240px;
   padding-top: 5px;
   z-index: 4;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   -webkit-transition: -webkit-transform 1s ease-in 0s;
   -moz-transition: -moz-transform 1s ease-in 0s;
   transition: transform 1s ease-in 0s; }
@@ -441,9 +461,6 @@ end floating-menu with width changing ------*/
       line-height: 1em;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       background: #201f1f; }
-      .floating-menu > ul > li a {
-        color: rgba(255, 255, 255, 0.54);
-        cursor: pointer; }
     .floating-menu > ul ul {
       position: relative;
       display: none;
@@ -453,11 +470,7 @@ end floating-menu with width changing ------*/
       padding: 2em;
       padding-left: 3em; }
       .floating-menu > ul ul li {
-        padding-bottom: 1em;
-        cursor: pointer; }
-        .floating-menu > ul ul li a {
-          color: rgba(255, 255, 255, 0.54);
-          cursor: pointer; }
+        padding-bottom: 1em; }
 
 .floating-menu.is-open {
   transform: translate3d(0, 0, 0); }
@@ -470,10 +483,7 @@ end floating-menu with width changing ------*/
   padding: 10px;
   border-radius: 100%;
   overflow: hidden;
-  left: 190px;
-  cursor: pointer;
-  position: absolute !important;
-  z-index: 5; }
+  left: 190px; }
 
 .mask-modal {
   background-color: rgba(0, 0, 0, 0.5);
@@ -581,8 +591,7 @@ header {
       width: 50px;
       margin-left: 1.618em;
       margin-top: 0;
-      padding: 12px 5px 5px;
-      cursor: pointer; }
+      padding: 12px 5px 5px; }
     header .main-line .mobile-menu-border {
       border-radius: 3px;
       border: 1px solid #000; }
@@ -662,8 +671,7 @@ header {
       border-radius: 100%;
       padding: 2px;
       background: #7B7B7B;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      cursor: pointer; }
+      border: 1px solid rgba(255, 255, 255, 0.35); }
       header .main-line .seach:last-child {
         margin-right: 0; }
     header .main-line .seach-ripple {
@@ -1118,8 +1126,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 2px;
-  cursor: pointer; }
+  border-radius: 2px; }
 
 .ripple {
   position: absolute;
