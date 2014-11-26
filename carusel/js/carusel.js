@@ -158,8 +158,10 @@ $(window).on('resize',function(){
   clicked = $(this);
   curImg.removeClass('active');
   curImg = clicked.find('img');
-  curImg.addClass('active');  
-	   
+  curImg.addClass('active'); 
+  
+  $('html, body').animate({scrollTop : 0},400);
+		return false; 
 
 }); 
 
